@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalnia:wght@500&family=Oswald:wght@500&family=Signika:wght@500&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Signika', sans-serif;
+
+}
+html
+{
+	font-size: 22px;
+}
+body
+{
+	background-color: #3a5a40;
+	padding: 1rem;
+}
+.box 
+{
+	height: 8rem;
+	border: 5px solid white;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.box img 
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+}	
+.box img:hover
+{
+	transform: scale(1.5);
+	cursor: pointer;
+
+}
+
+.container
+{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+	gap: 1rem;
+	margin-top: -25px;
+	
+	
+	 	
+}
+.control
+{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: left;
+}
+.btn-group button
+{
+	width: 100px;
+	height: 30px;
+	border: none;
+	font-size: 0.7rem;
+	background-color: #277da1;
+	color: white;
+	border: 2px solid #277da1;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 3px;
+
+}
+.btn-group button:hover,.btn-group .btn-clicked
+{
+	background-color: #3a5a40;
+	color:#fff ;
+
+}
+#search
+{
+	width: 200px;
+	height: 30px;
+	outline: none;
+	border: 3px solid #277da1;
+	border-radius: 3px;
+	padding: 0px 10px;
+	font-size: 0.6rem;
+}
